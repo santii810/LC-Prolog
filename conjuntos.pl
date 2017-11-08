@@ -24,7 +24,7 @@ cartesiano([Car|Cdr], C, Fin) :-
 	
 linea(_,[],[]).
 linea(Elem,[Car|Cdr],[[Elem,Car]|Y]) :- 
-	linea(Elem,Cdr,Y).	
+	linea(Elem,Cdr,Y), !.	
 
 
 
