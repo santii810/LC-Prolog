@@ -1,5 +1,5 @@
 quicksort([],[]).
-quicksort([Car|Cdr],R) :-
+ ) :-
 	partir(Car,Cdr,Izq,Der),
 	quicksort(Izq,IzqO),
 	quicksort(Der,DerO),
