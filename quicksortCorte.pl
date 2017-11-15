@@ -5,10 +5,7 @@ quicksort([Car|Cdr],R) :-
 	quicksort(Der,DerO),
 	append(IzqO,[Car|DerO],R).
   
-  
-
-  
- %%%%%%%%Otra forma aplicando corte
+ 
 partir(_,[],[],[]).
 partir(Pivote,[Car|Cdr],[Car|Izq],Der):- 
 	Car =< Pivote, !,
