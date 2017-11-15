@@ -9,7 +9,8 @@ union([Car|Cdr],C,[Car|Union]) :- union(Cdr,C,Union).
 
 interseccion([],_,[]).
 interseccion([Car|Cdr],C,[Car|Inter]) :-
-	member(Car,C),!,interseccion(Cdr,C,Inter).
+	member(Car,C),!,
+	interseccion(Cdr,C,Inter).
 interseccion([_|Cdr],C,Inter) :- 
 	interseccion(Cdr,C,Inter).
 	
