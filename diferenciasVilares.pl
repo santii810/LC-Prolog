@@ -8,7 +8,7 @@ invertir([Car|Cdr],R) :- invertir(Cdr, T), append(T,[Car],R).
 /* Solucion CON diferencias de listas */
 invertir2(L,R) :- invertir_dl(L,R\[]).
 
-invertir_dl([],R\R).
+invertir_dl([],M\M).
 invertir_dl([Car|Cdr],R\C) :- invertir_dl(Cdr, R\[Car|C]).
 
 
