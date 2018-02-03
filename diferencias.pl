@@ -60,6 +60,9 @@ linea_dl(_,[],R\R).
 linea_dl(X,[Car|Cdr],[[X,Car]|L]\R ):-
 	linea_dl(X,Cdr, L\R ).
 
+
+
+
 /****************** QUICKSORT ************/
 quicksort([],[]):-!.
 quicksort([Car|Cdr],R):-
@@ -86,7 +89,16 @@ quicksort_dl([Car|Cdr],	X\Z	):-
 
 
 
-	
+
+
+/**********************ROTAR***********************/
+/* Solucion SIN diferencias de listas */
+rotar([Car|Cdr],R) :- append(Cdr,[Car],R).
+
+/* Solucion CON diferencias de listas */
+rotar([])
+
+
 
 
 
